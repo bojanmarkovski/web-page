@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Services</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="Services.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"></head>
+<body>
+	<div class="container body">
+		<div class="row main-container">
+
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="row box-shadow">
+				<h1 class="text-align">We're best in</h1>
+					<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 click">
+						<h3 class="branding">
+							<span class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-6 col-xs-offset-3 border-bottom text-center">Branding</span>
+						</h3>
+						<h3 class="marketing">
+							<span class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-6 col-xs-offset-3 border-bottom text-center">Marketing</span>
+						</h3>
+						<h3 class="coding">
+							<span class="col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-6 col-xs-offset-3 border-bottom text-center">Coding</span>
+						</h3>
+					</div>
+					<div class="col-lg-7 col-md-5 col-sm-5 col-xs-12 change-picture">
+						<img src="http://www.wasabi-artwork.com/wp-content/uploads/2017/12/k7.png" class="img-resonsive change-picture img"></div>
+					<div class="col-lg-3 col-md-3 col-sm-3 ul-list branding-list text-right">
+						<ul>
+							<li>CMS (WordPress & Prestashop)</li>
+							<li>Web Design</li>
+							<li>Mobile & App Design</li>
+							<li>E-Commerce</li>
+							<li>UI • UX Responsive</li>
+							<li>Templating</li>
+							<li>Creative Front-End</li>
+							<li>Back-End Development</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ul-list marketing-list text-right display-none">
+						<ul>
+
+							<li>Lead Generation</li>
+							<li>Display and Advertising Recapture Marketing</li>
+							<li>Social Media Marketing</li>
+							<li>Search Engine Optimization</li>
+							<li>PPC and paid search menagement</li>
+							<li>Conversion Rate Optimisation</li>
+							<li>Strategy</li>
+							<li>Growth Hacking</li>
+							<li class="mobile-none">Side Project Marketing</li>
+							<li>Email Marketing</li>
+							<li>Content Marketing</li>
+							<li>Digital Event Amplification</li>
+							<li class="mobile-none">Digital Marketing Trainings</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 ul-list coding-list text-right display-none">
+						<ul>
+
+							<li>Art & Creative Direction</li>
+							<li>Brand Identity</li>
+							<li>Logo Design</li>
+							<li>Graphic Guidelines</li>
+							<li>Illustration</li>
+							<li>Typography</li>
+							<li>Print</li>
+							<li>Strategy</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script
+  		src="https://code.jquery.com/jquery-3.3.1.min.js"
+  		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  		crossorigin="anonymous"></script>
+
+	<script>
+
+		$(document).ready(function(){
+
+			$(".branding").on('click', function() {
+			$(".change-picture").attr("src", "http://www.wasabi-artwork.com/wp-content/uploads/2017/12/k7.png");
+				$(".branding-list").show(900);
+				$(".marketing-list").hide();
+				$(".coding-list").hide();
+				$(".branding span").css("border", "5px solid #6EF7C3");
+		        $(".marketing span").css("border", "5px solid white");
+		       	$(".coding span").css("border", "5px solid white");
+
+
+			});
+			$(".marketing").on('click', function() {
+				$(".change-picture").attr("src", "http://www.wasabi-artwork.com/wp-content/uploads/2017/12/vhs.png")
+				$(".marketing-list").show(900);
+				$(".branding-list").hide();
+				$(".coding-list").hide();
+				$(".marketing span").css("border", "5px solid #6EF7C3");
+		      	$(".branding span").css("border", "5px solid white");
+		        $(".coding span").css("border", "5px solid white");
+
+
+
+			});
+
+			$(".coding").on('click', function() {
+				$(".change-picture").attr("src", "http://www.wasabi-artwork.com/wp-content/uploads/2017/12/disk.png")
+				$(".coding-list").show(900);
+				$(".branding-list").hide();
+				$(".marketing-list").hide();
+				$(".coding span").css("border", "5px solid #6EF7C3");
+		       	$(".branding span").css("border", "5px solid white");
+		       	$(".marketing span").css("border", "5px solid white");
+			});
+
+
+				var position = 0;
+			$(window).bind('mousewheel', function(e) {
+
+				if ( e.originalEvent.wheelDelta <= 0 && position < 3) {
+					position++;
+				} else if (position > 0) {
+					position--;
+				}
+
+				if (position == 0) {
+					$(".change-picture").attr("src", "http://www.wasabi-artwork.com/wp-content/uploads/2017/12/k7.png");
+		            $(".branding-list").show(900);
+		 			$(".marketing-list").hide();
+		           	$(".coding-list").hide();
+		           	$(".branding span").css("border", "5px solid #6EF7C3");
+		           	$(".marketing span").css("border", "5px solid white");
+		           	$(".coding span").css("border", "5px solid white");
+				} else if (position == 1) {
+					$(".change-picture").attr("src", "http://www.wasabi-artwork.com/wp-content/uploads/2017/12/vhs.png")
+		            $(".marketing-list").show(900);
+				    $(".branding-list").hide();
+		           	$(".coding-list").hide();
+		           	$(".marketing span").css("border", "5px solid #6EF7C3");
+		           	$(".branding span").css("border", "5px solid white");
+		           	$(".coding span").css("border", "5px solid white");
+				} else if (position == 2) {
+					$(".change-picture").attr("src", "http://www.wasabi-artwork.com/wp-content/uploads/2017/12/disk.png")
+					$(".branding-list").hide();
+		            $(".marketing-list").hide();
+		           	$(".coding-list").show(900);
+		           	$(".coding span").css("border", "5px solid #6EF7C3");
+		           	$(".branding span").css("border", "5px solid white");
+		           	$(".marketing span").css("border", "5px solid white");
+				}
+        
+
+        	});
+
+		});
+		</script>
+
+</body>
+</html>

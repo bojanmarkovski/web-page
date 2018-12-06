@@ -1,0 +1,600 @@
+/*hamburger menu*/
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+.navbar-toggle{
+		margin-top: 0px;
+		padding: 4px 0px;
+}
+.navBar{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 9999;
+	background-color: transparent;
+	transition: 1s;
+	padding: 20px 50px;
+}
+.btnCollapse span{
+	background-color: #FF2C40;
+}
+.navbarFiexed{
+	background-color: white;
+	transition: 1s;
+}
+.navbarFiexed li a{
+	color: gray;
+	text-decoration: none;
+}
+.nav > li > a:focus{
+	background-color: transparent;
+}
+.navBar li{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.nav li .border-li{
+	border-top: 3px solid transparent;
+}
+.nav li .border-li:hover{
+	border-top: 3px solid red;
+	transition: 0.7s;
+}
+.navBar .active a{
+	color: #FF2C40;
+	border-top: 3px solid #FF2C40;
+}
+.navBar li a:hover{
+	background-color: transparent;
+}
+.navBar .active{
+	color: red;
+}
+.navBar a{
+	color: white;
+	font-size: 12px;
+    letter-spacing: 2px;
+}
+.navBar li .hireUsNavbar{
+	padding-top: 5px;
+}
+.hireUsNavbar button{
+	background-color: #FF2C40;
+	color: white;
+}
+.navBar img{
+	width: 150px;
+	margin-right: 0px;
+}
+.navBar .pd-0{
+	padding-top: 0px
+}
+.nav-img{
+	background-image: url(https://www.localised.com/img/bg-home-2fr-g-9686ea33b5.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+	padding-top: 15vh;
+	position: relative;
+}
+.color-red{
+	color: #FF2C40; 
+	font-weight: bold;
+}
+.fadeIn{
+	font-size: 27px;
+	line-height: 50px;
+	font-family: SofiaProDark, sans-serif;
+	padding-top: 15%;
+	padding-left: 10px;
+	letter-spacing: 1px;
+}
+.fadeInAfter{
+	font-size: 16px;
+	line-height: 30px;
+    font-family: Lora,sans-serif;
+    list-style: none;
+    padding: 0px;
+    margin-top: 5vh;
+	letter-spacing: 1px;
+	padding-bottom: 40px;
+	letter-spacing: 2px;
+}
+.fadeInAfter span{
+	font-size: 30px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.hover-meet{
+	border: 3px solid gray;
+	padding: 20px;
+	margin-left: 10px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.hover-meet:hover{
+	cursor: pointer;
+	color: #FF2C40;
+	border: 3px solid #FF2C40;
+	transition: 0.7s;
+}
+.laptop-img{
+	margin-top: -170px;
+}
+.global h2{
+	line-height: 60px;
+	font-size: 48px;
+}
+.global p{
+	line-height: 30px;
+}
+.pd-bottom{
+	padding-bottom: 20px;
+}
+.hireUs{
+	background: linear-gradient(90deg,#ff2c40,#f15a3e);
+	padding-top: 17px;
+	padding-bottom: 17px;
+	color: white;
+}
+.hireUs:hover{
+	background: #ff2c40;
+	color: white;
+}
+.hover-img{
+	padding-top: 25vh;
+}
+.hover-img p{
+	color: white;
+	line-height: 30px;
+}
+.hover-img h3{
+	line-height: 40px;
+}
+.hover-img1,
+.hover-img2,
+.hover-img3{
+	height: 85vh;
+	padding: 8vh 10vh;
+	border: 1px solid lightgray;
+}
+.hover-img1:hover,
+.hover-img2:hover,
+.hover-img3:hover{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	color: white;
+	transition: 1s;
+}
+
+.hover-img1:hover{
+	background-image: url("https://www.localised.com/img/tile-skirt-jp-ad84734c27.jpg");
+}
+.hover-img2:hover{
+	background-image: url("https://www.localised.com/img/tile-skirt-black-ab3936bd41.jpg");
+}
+.hover-img3:hover{
+	background-image: url("https://www.localised.com/img/tile-box-ee1bf3da2e.jpg");
+}
+
+.tablet-img{
+
+}
+.tablet-text h2{
+	line-height: 50px;
+}
+.tablet-text p{
+	line-height: 32px;
+}
+.tablet-text img{
+	margin-top: 36px;
+}
+.horizontal-line{
+	height: 2px;
+	background-color: red;
+	margin-top: 11%;
+}
+.market{
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+.market h2{
+	line-height: 50px;
+}
+.makret p{
+	line-height: 32px;
+	font-size: 32px;
+}
+.pd-top{
+	padding-top: 7vh;
+}
+.market span{
+	color: #FF2C40;
+}
+.button-service:hover{
+	text-decoration: none;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus{
+	outline: none;
+}
+
+
+
+.imgGlobalExpansion{
+	background-image: url(black-city-map.jpg);
+	height: 60vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: table;
+	margin-bottom: 60px;
+}
+.tableCell{
+	display: table-cell;
+	vertical-align: middle;
+}
+.globalExpansion h1{
+	color: white;
+	padding-bottom: 4%;
+}
+.joinUs{
+	background-color: white;
+	padding-top: 17px;
+	padding-bottom: 17px;
+}
+.joinUs:hover{
+	border: 1px solid black;
+}
+.hireUs{
+	background: linear-gradient(90deg,#ff2c40,#f15a3e);
+	padding-top: 17px;
+	padding-bottom: 17px;
+	color: white;
+}
+.hideme{
+	opacity: 0;
+}
+.hide{
+	opacity: 0;
+}
+.hireUs:hover{
+	background: #ff2c40;
+	color: white;
+}
+
+.logoFooter{
+	margin-bottom: 60px;
+}
+.contactFooter{
+	padding: 40px;
+	font-size: 16px;
+}
+.contactFooter a{
+	padding-right: 5px;
+	padding-left: 5px;
+	text-decoration: none;
+	color: #ff2c40;
+}
+.border{
+	border-top: 1px solid #ff2c40;
+	width: 91%;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+/*Classes for jQuery*/
+.fadeIn{
+	display: none;
+}
+.fadeInAfter{
+	display: none;
+}
+
+
+
+
+
+
+
+/*Clocks*/
+.clock{
+	background-image: url(https://d347awuzx0kdse.cloudfront.net/carbatec/images/resized/96914eca754a130bacea2e1e3fb3dd6c5310f474.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100px;
+	height: 100px;
+}
+.clock{
+	background-image: url(http://junesiphone.com/images/clock.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 10rem;
+	width: 10rem;
+	margin: 0 auto;
+}
+.clock-face{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+/*.seconds-hand{
+	position: absolute;
+	width: 38%;
+	height: 3px;
+	background: #ff2c40;;
+	top: 50%;
+	left: 12%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}*/
+/*Skopje*/
+.hours-hand{
+	position: absolute;
+	width: 21%;
+	height:5px;
+	background: #ff2c40;;
+	top: 50%;
+	left: 29%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}
+.minutes-hand{
+	position: absolute;
+	width: 34%;
+	height: 4px;
+	background: #ff2c40;
+	top: 50%;
+	left: 16%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}
+/*London*/
+.hours-hand1{
+	position: absolute;
+	width: 21%;
+	height:5px;
+	background: #ff2c40;;
+	top: 50%;
+	left: 29%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}
+.minutes-hand1{
+	position: absolute;
+	width: 34%;
+	height: 4px;
+	background: #ff2c40;
+	top: 50%;
+	left: 16%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}
+/*Bucharest*/
+.hours-hands3{
+	position: absolute;
+	width: 21%;
+	height:5px;
+	background: #ff2c40;;
+	top: 50%;
+	left: 29%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}
+.minutes-hands3{
+	position: absolute;
+	width: 34%;
+	height: 4px;
+	background: #ff2c40;
+	top: 50%;
+	left: 16%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}
+
+/*Warshaw*/
+.hours-hands4{
+	position: absolute;
+	width: 21%;
+	height:5px;
+	background: #ff2c40;;
+	top: 50%;
+	left: 29%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}
+.minutes-hands4{
+	position: absolute;
+	width: 34%;
+	height: 4px;
+	background: #ff2c40;
+	top: 50%;
+	left: 16%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}
+
+/*Hawaii*/
+.hours-hand5{
+	position: absolute;
+	width: 21%;
+	height:5px;
+	background: #ff2c40;;
+	top: 50%;
+	left: 29%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}
+.minutes-hand5{
+	position: absolute;
+	width: 34%;
+	height: 4px;
+	background: #ff2c40;
+	top: 50%;
+	left: 16%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERY*/
+@media screen and (max-width:992px){
+	.displaynone{
+		display: none;
+	}
+	.pdTopTablet{
+		padding-top: 8vh;
+	}
+	#myNavbar ul li{
+		padding: 0px;
+	}
+	.fadeInAfter li{
+		font-size: 15px;
+		line-height: 23px;
+	}
+	.hover-img h3{
+		line-height: 30px;
+		font-size: 20px;
+	}
+	.hover-img p{
+		line-height: 25px;
+		font-size: 13px;
+	}
+	.tablet-img img{
+		padding-top: 50px;
+	}
+}
+
+@media screen and (max-width:768px){
+	#myNavbar ul li{
+		margin-bottom: 15px;
+	}
+	.display-none-service{
+		display: none !important;
+	}
+	.about-us h2{
+		font-size: 23px;
+	}
+	.about-us ul li{
+		font-size: 12px;
+	}
+	.leaderQuote h1{
+		font-size: 23px;
+		line-height: 40px;
+	}
+	.ourValues h3{
+		margin-top: 30px;
+	}
+	.ourValues ul{
+		padding-left: 0px;
+	}
+	#accordion h4{
+		font-size: 16px;
+	}
+	#accordion i{
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width:767px){
+	.textCenter{
+		text-align: center;
+	}
+	#myNavbar ul li a{
+		padding-left: 0px;
+		text-align: center;
+		color: white;
+		padding-right: 0px;
+	}
+	.active a{
+		border: 3px solid #ff2c40;
+	}
+	.pdTopTablet{
+		padding-top: 0;
+	}
+	.hireUs{
+		margin-top: 1.3vh;
+	}
+	.navbarFiexed ul li a{
+		transition: 1s;
+	}
+	.white{
+		background-color: #292929;
+		height: 100vh;
+	}
+	.ourValues h3{
+		padding-top: 0px;
+	}
+	.mobile-tx-center{
+		text-align: center;
+	}
+	.text-center-mobile{
+		text-align: center;
+	}
+	.text-small span{
+		font-size: 18px;
+		padding: 0px;
+	}
+	.font-size{
+		padding-top: 0px;
+	}
+	.display-none-mobile{
+		display: none;
+	}
+	.hover-img1,
+	.hover-img2,
+	.hover-img3{
+		height: 55vh;
+	}
+	.market{
+		padding-top: 0px;
+	}
+}
+
+@media screen and (max-width:667px){
+	.about-us h2{
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.about-us ul li{
+		font-size: 11px;
+		line-height: 24px;
+	}
+
+}
+@media screen and (max-width:375px){
+	.hover-img p{
+		line-height: 18px;
+	}
+	.hover-img h3{
+		line-height: 27px;
+	}
+	.text-small span{
+		font-size: 15px;
+	}
+}

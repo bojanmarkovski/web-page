@@ -1,0 +1,190 @@
+.logoFooter{
+	margin-bottom: 60px;
+}
+.contactFooter{
+	padding: 40px;
+	font-size: 16px;
+}
+.contactFooter a{
+	padding-right: 5px;
+	padding-left: 5px;
+	text-decoration: none;
+	color: #ff2c40;
+}
+.border{
+	border-top: 1px solid #ff2c40;
+	width: 91%;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+/*Clocks*/
+.clock{
+	background-image: url(https://d347awuzx0kdse.cloudfront.net/carbatec/images/resized/96914eca754a130bacea2e1e3fb3dd6c5310f474.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100px;
+	height: 100px;
+}
+.clock{
+	background-image: url(http://junesiphone.com/images/clock.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 10rem;
+	width: 10rem;
+	margin: 0 auto;
+}
+.clock-face{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+/*.seconds-hand{
+	position: absolute;
+	width: 38%;
+	height: 3px;
+	background: #ff2c40;;
+	top: 50%;
+	left: 12%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}*/
+/*Skopje*/
+.hours-hand{
+	position: absolute;
+	width: 21%;
+	height:5px;
+	background: #ff2c40;;
+	top: 50%;
+	left: 29%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}
+.minutes-hand{
+	position: absolute;
+	width: 34%;
+	height: 4px;
+	background: #ff2c40;
+	top: 50%;
+	left: 16%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}
+/*London*/
+.hours-hand1{
+	position: absolute;
+	width: 21%;
+	height:5px;
+	background: #ff2c40;;
+	top: 50%;
+	left: 29%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}
+.minutes-hand1{
+	position: absolute;
+	width: 34%;
+	height: 4px;
+	background: #ff2c40;
+	top: 50%;
+	left: 16%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}
+/*Bucharest*/
+.hours-hands3{
+	position: absolute;
+	width: 21%;
+	height:5px;
+	background: #ff2c40;;
+	top: 50%;
+	left: 29%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}
+.minutes-hands3{
+	position: absolute;
+	width: 34%;
+	height: 4px;
+	background: #ff2c40;
+	top: 50%;
+	left: 16%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}
+
+/*Warshaw*/
+.hours-hands4{
+	position: absolute;
+	width: 21%;
+	height:5px;
+	background: #ff2c40;;
+	top: 50%;
+	left: 29%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}
+.minutes-hands4{
+	position: absolute;
+	width: 34%;
+	height: 4px;
+	background: #ff2c40;
+	top: 50%;
+	left: 16%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}
+
+/*Hawaii*/
+.hours-hand5{
+	position: absolute;
+	width: 21%;
+	height:5px;
+	background: #ff2c40;;
+	top: 50%;
+	left: 29%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}
+.minutes-hand5{
+	position: absolute;
+	width: 34%;
+	height: 4px;
+	background: #ff2c40;
+	top: 50%;
+	left: 16%;
+	transform-origin: 100%;
+	transform: rotate(90deg);
+}
+
+@media screen and (max-width:992px){
+	.displaynone{
+		display: none;
+	}
+	.pdTopTablet{
+		padding-top: 8vh;
+	}
+}
+@media screen and (max-width:767px){
+	.pdTopTablet{
+		padding-top: 0;
+	}
+	.white{
+		background-color: #292929;
+		height: 100vh;
+	}
+	.mobile-tx-center{
+		text-align: center;
+	}
+}
+@media screen and (max-width:667px){
+	.about-us h2{
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.about-us ul li{
+		font-size: 11px;
+		line-height: 24px;
+	}
+}

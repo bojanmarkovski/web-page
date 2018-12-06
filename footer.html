@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="footer.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"></head>
+<body>
+	<div class="container-fluid">
+		<!-- FOOTER IMG -->
+		<div class="row class logoFooter">
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-2 col-sm-offset-5 col-xs-4 col-xs-offset-4">
+				<div class="row">
+					<div class="col-md-2 col-md-offset-5">
+						<img src="https://www.localised.com/img/logo-glyph-black-eb012a8d0d.svg" class="img-responsive"></div>
+				</div>
+			</div>
+		</div>
+		<!--FOOTER CLOCKS -->
+		<div class="row displaynone">
+			<div class="col-lg-2 col-md-2">
+				<div class="clock">
+					<div class="clock-face">
+						<div class="hand seconds-hand"></div>
+						<div class="hand minutes-hand"></div>
+						<div class="hand hours-hand"></div>
+					</div>
+				</div>
+				<h3 class="text-center">Skopje</h3>
+			</div>
+			<div class="col-lg-2 col-md-2">
+				<div class="clock">
+					<div class="clock-face">
+						<div class="hand seconds-hand1"></div>
+						<div class="hand minutes-hand1"></div>
+						<div class="hand hours-hand1"></div>
+					</div>
+				</div>
+				<h3 class="text-center">London</h3>
+			</div>
+			<div class="col-lg-2 col-md-2">
+				<div class="clock">
+					<div class="clock-face">
+						<div class="hand seconds-hand seconds-hands"></div>
+						<div class="hand minutes-hand minutes-hands"></div>
+						<div class="hand hours-hand hours-hands"></div>
+					</div>
+				</div>
+				<h3 class="text-center">Toronto</h3>
+			</div>
+			<div class="col-lg-2 col-md-2">
+				<div class="clock">
+					<div class="clock-face">
+						<div class="hand seconds-hand5"></div>
+						<div class="hand minutes-hand5"></div>
+						<div class="hand hours-hand5"></div>
+					</div>
+				</div>
+				<h3 class="text-center">Hawaii</h3>
+			</div>
+			<div class="col-lg-2 col-md-2">
+				<div class="clock">
+					<div class="clock-face">
+						<div class="hand seconds-hands3"></div>
+						<div class="hand minutes-hands3"></div>
+						<div class="hand hand hours-hands3"></div>
+					</div>
+				</div>
+				<h3 class="text-center">Bucharest</h3>
+			</div>
+			<div class="col-lg-2 col-md-2">
+				<div class="clock">
+					<div class="clock-face">
+						<div class="hand seconds-hands4"></div>
+						<div class="hand minutes-hands4"></div>
+						<div class="hand hours-hands4"></div>
+					</div>
+				</div>
+				<h3 class="text-center">Warshaw</h3>
+			</div>
+		</div>
+		<!-- FOOTER CONTACT -->
+		<div class="border"></div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 contactFooter">
+				<div class="row">
+					<div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-6 col-xs-12 mobile-tx-center">
+						<div>
+							<p class="text-muted">&copy2018 Bojan Markovski. All rights reserved.</p>
+						</div>
+					</div>
+					<div class="col-lg-2 col-lg-offset-3 col-md-3 col-md-offset-3 col-sm-6 col-xs-12 text-right mobile-tx-center">
+						<a href="">
+							<span class="text-center">Privacy</span>
+						</a>
+						<a href="">
+							<span class="text-center">Legal</span>
+						</a>
+						<a href="">
+							<span class="text-center">In</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script
+  		src="https://code.jquery.com/jquery-3.3.1.min.js"
+  		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  		crossorigin="anonymous"></script>
+	<script>
+
+		$(document).ready(function(){
+		// Clocks
+   			// First Clock Normal Time
+			function clock() {
+				var now = new Date();
+				var seconds = now.getSeconds();
+				var secondsDegrees = (seconds / 60) * 360 + 90;
+				var secondsHand = document.querySelector(".seconds-hand");
+				secondsHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+
+				var minutes = now.getMinutes();
+				var minutesDegrees = (minutes / 60) * 360 + 90;
+				var minutesHand = document.querySelector(".minutes-hand");
+				minutesHand.style.transform = `rotate(${minutesDegrees}deg)`;
+
+
+				var hours = now.getHours();
+				var hoursDegrees =  (hours / 60) * 360 + 90;
+				var hoursHand = document.querySelector(".hours-hand");
+				hoursHand.style.transform = `rotate(${hoursDegrees}deg)`;
+
+			}
+			setInterval(clock, 1);
+
+   			// Second Clock -1 hour Time
+			function clock1() {
+				var now = new Date();
+				var seconds = now.getSeconds();
+				var secondsDegrees = (seconds / 60) * 360 + 90;
+				var secondsHand = document.querySelector(".seconds-hand1");
+				secondsHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+
+				var minutes = now.getMinutes();
+				var minutesDegrees = (minutes / 60) * 360 + 90;
+				var minutesHand = document.querySelector(".minutes-hand1");
+				minutesHand.style.transform = `rotate(${minutesDegrees}deg)`;
+
+
+				var hours = now.getHours();
+				var hoursDegrees =  ((hours - 1) / 12) * 360 + 90;
+				var hoursHand = document.querySelector(".hours-hand1");
+				hoursHand.style.transform = `rotate(${hoursDegrees}deg)`;
+
+			}
+
+
+			setInterval(clock1, 1);
+
+   			// Second Clock -3 hour Time
+			function clock2() {
+				var now = new Date();
+				var seconds = now.getSeconds();
+				var secondsDegrees = (seconds / 60) * 360 + 90;
+				var secondsHand = document.querySelector(".seconds-hands");
+				secondsHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+
+				var minutes = now.getMinutes();
+				var minutesDegrees = (minutes / 60) * 360 + 90;
+				var minutesHand = document.querySelector(".minutes-hands");
+				minutesHand.style.transform = `rotate(${minutesDegrees}deg)`;
+
+
+				var hours = now.getHours();
+				var hoursDegrees =  ((hours - 6) / 12) * 360 + 90;
+				var hoursHand = document.querySelector(".hours-hands");
+				hoursHand.style.transform = `rotate(${hoursDegrees}deg)`;
+
+			}
+
+
+
+   			// Second Clock +2 hour Time BUCHAREST
+			function clock3() {
+				var now = new Date();
+				var seconds = now.getSeconds();
+				var secondsDegrees = (seconds / 60) * 360 + 90;
+				var secondsHand = document.querySelector(".seconds-hands3");
+				secondsHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+
+				var minutes = now.getMinutes();
+				var minutesDegrees = (minutes / 60) * 360 + 90;
+				var minutesHand = document.querySelector(".minutes-hands3");
+				minutesHand.style.transform = `rotate(${minutesDegrees}deg)`;
+
+
+				var hours = now.getHours();
+				var hoursDegrees =  ((hours + 2) / 12) * 360 + 90;
+				var hoursHand = document.querySelector(".hours-hands3");
+				hoursHand.style.transform = `rotate(${hoursDegrees}deg)`;
+
+			}
+			setInterval(clock3, 1);
+
+
+   			// Second Clock +2 hour Time Warshaw
+			function clock4() {
+				var now = new Date();
+				var seconds = now.getSeconds();
+				var secondsDegrees = (seconds / 60) * 360 + 90;
+				var secondsHand = document.querySelector(".seconds-hands4");
+				secondsHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+
+				var minutes = now.getMinutes();
+				var minutesDegrees = (minutes / 60) * 360 + 90;
+				var minutesHand = document.querySelector(".minutes-hands4");
+				minutesHand.style.transform = `rotate(${minutesDegrees}deg)`;
+
+
+				var hours = now.getHours();
+				var hoursDegrees =  ((hours + 1) / 12) * 360 + 90;
+				var hoursHand = document.querySelector(".hours-hands4");
+				hoursHand.style.transform = `rotate(${hoursDegrees}deg)`;
+
+			}
+			setInterval(clock4, 1);
+
+			function clock5() {
+				var now = new Date();
+				var seconds = now.getSeconds();
+				var secondsDegrees = (seconds / 60) * 360 + 90;
+				var secondsHand = document.querySelector(".seconds-hand5");
+				secondsHand.style.transform = `rotate(${secondsDegrees}deg)`;
+
+
+				var minutes = now.getMinutes();
+				var minutesDegrees = (minutes / 60) * 360 + 90;
+				var minutesHand = document.querySelector(".minutes-hand5");
+				minutesHand.style.transform = `rotate(${minutesDegrees}deg)`;
+
+
+				var hours = now.getHours();
+				var hoursDegrees =  ((hours + 1) / 12) * 360 + 90;
+				var hoursHand = document.querySelector(".hours-hand5");
+				hoursHand.style.transform = `rotate(${hoursDegrees}deg)`;
+
+			}
+			setInterval(clock5, 1);
+
+
+				setInterval(clock2, 1);
+
+			});
+
+	</script>
+</body>
+</html>
